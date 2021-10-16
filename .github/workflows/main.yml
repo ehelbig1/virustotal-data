@@ -17,6 +17,12 @@ jobs:
       - run: npm test
       - run: npm run build
       
+      - uses: snyk/actions/node@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_AUTH_TOKEN }}
+        with:
+          command: monitor
+      
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
