@@ -2,11 +2,11 @@ import axios from 'axios';
 
 import { GetIpInfoResponse } from './models/get_ip_info';
 
-export interface IpAddressDatasource {
+export interface IVirusTotalIpAddressDatasource {
     getIpInfo: (ip: string) => Promise<GetIpInfoResponse>;
 }
 
-export class VirusTotalIpAddressDatasource implements IpAddressDatasource {
+export class VirusTotalIpAddressDatasource implements IVirusTotalIpAddressDatasource {
     baseUrl = 'https://www.virustotal.com/api';
     apiKey: string;
 
