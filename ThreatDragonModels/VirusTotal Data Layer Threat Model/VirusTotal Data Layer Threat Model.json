@@ -1,0 +1,17 @@
+{
+  "summary": {
+    "title": "VirusTotal Data Layer Threat Model",
+    "owner": "Evan Helbig"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "Threat Model",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "Evan Helbig"
+  }
+}
